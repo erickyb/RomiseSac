@@ -1,0 +1,7 @@
+1.-Maquetado Responsive con Css Grid | Diseño adaptativo 
+2.-manejo de imagenes responsive | Css Responsive Desing
+3.-como hacer un menu responsive | Css Responsive Desing 
+4.-whast a tu pagina  
+https://www.youtube.com/watch?v=j9imZ6AqtpI&t=91s
+5.-google maps
+https://www.youtube.com/watch?v=4puAwNfX-Uw
