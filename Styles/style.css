@@ -1,313 +1,233 @@
-:root{
+  :root{
   
---color-primary-0: #093585;
---color-primary-1: #2E5CB1;
---color-primary-2: #0E43A3;
---color-primary-3: #062A6C;
---color-primary-4: #031D4F;
---color-fondo:gainsboro;
+    --color-primary-0: #093585;
+    --color-primary-1: #2E5CB1;
+    --color-primary-2: #0E43A3;
+    --color-primary-3: #062A6C;
+    --color-primary-4: #031D4F;
+    --color-fondo:gainsboro;
+  }
+  *{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+  }
 
+  html{
+   height: 100%;
+  }
 
-}
-*{
- box-sizing: border-box; 
- margin: 0;
- padding: 0;
-}
+  body{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background: var(--color-fondo);
+   }
 
-html{
-  height: 100%;
-}
-
-body{
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  min-height: 100%;
-  background: var(--color-fondo);
- }
-
- h1{
-  color: white;
- }
- h2 {
+  h1{
+   color: white;
+    }
+  h2 {
   margin-left: 15px;
   color:var(--color-primary-3)
- }
+    }
 
  .c-i{
     color:white;
     font-size: 25px;
- }
-
-/* .grid-container > * {
-  box-shadow: -1px 1px 7px 0px rgba(0,0,0,.75);
-  text-align: justify;
- 
- 
-} */
-
-
-
-#navbar{
-  display: flex;
+    }
+  #navbar{
+    display: flex;
     justify-content: space-between;
-  
-  /* width: 100%;
-  height: 75px;
-
-
-align-items: center;
-padding: 30px 10%; */
-background-image:linear-gradient( #2E5CB1,#031D4F) ;
-opacity: 86%;
-
-  grid-area:navbar;
-  /* background:var(--color-primary-2); */
-  
- }
+    background-image:linear-gradient( #2E5CB1,#031D4F) ;
+    opacity: 86%;
+    grid-area:navbar;
+   }
  
-.inicio-img{
-  grid-area: inicio-img;
-  /* width:100%;
-  margin: 0 ; */
-  /* background: var(--color-primary-1);
-  color: white;
-  text-align: left;
-  font-size: 15px;*/
-} 
-.header-img{
-  width: 100%;
-  /* height: auto; */
-height: 100vh;
-  
-}
+  .inicio-img{
+    grid-area: inicio-img;
+  } 
 
- #btn-nemu{
-  display: none;
+  .header-img{
+    width: 100%;
+    /* height: auto; */
+    height: 100vh;
   }
 
- #navbar label {
-  display: block;
+  #btn-nemu{
+    display: none;
+    }
 
-  padding: 10px;
-  border-right: 1px solid #fff;
-  width: 47px;
- }
- #navbar label:hover{
-  cursor:pointer;
-  background: rgba(0, 0, 0, 0.3);
- }
-.menu{
-  position: absolute;
-  /* background: var(--color-primary-2); */
-  background-image: linear-gradient(#2E5CB1, #031D4F);
-    /* opacity: 86%; */
-  width:70%;
-  margin-left: -70%;
-  transition: all 0.5s;
-
-}
-.menu ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  
-}
-.menu li{
-  border-top: 1px solid #fff;
-}
-.menu li:hover{
-  background:rgba(0,0,0,0.3)
-}
-
-
-.menu li a {
-display: block;
-padding: 14px 20px;
-color: #fff;
-text-decoration: none;
-}
-/* ~ para la busqueda  */
- #btn-nemu:checked ~ .menu {
-   margin: 0;
- }
-
-.main{
-  grid-area:main;
-  /* background: gainsboro; */
-  padding: 25px;
-
-  
-}
-.container-servicios ul{
-list-style: none;
-margin-left: 25px;
-}
-
-.bxs-wrench{
-    color: var(--color-primary-1);
-      font-size: 25px;
-      margin-right: 25px;
-      font-style: italic;
-}
-.left{
-  margin-left: 15px;
-}
-.sidebar{
-  grid-area:sidebar;
-  padding: 15px;
-}
-.paginasImportantes ul{
+  #navbar label {
+    display: block;
+    padding: 10px;
+    border-right: 1px solid #fff;
+    width: 47px;
+  }
+  #navbar label:hover{
+    cursor:pointer;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .menu{
+    position: absolute;
+    background-image: linear-gradient(#2E5CB1, #031D4F);
+    width:70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+  .menu ul{
     list-style: none;
     margin: 0;
     padding: 0;
-}
-.paginasImportantes li a{
-  display: block;
-  padding:8px 3px 0 3px ;
-  color: black;
-  text-decoration: none;
-} 
-.paginasImportantes li:hover{
-  background: rgba(0, 0, 0, 0.3)
-}
-.contac{
-  grid-area:contac;
-}
-.parrafo-contac{
-  margin: 25px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu li{
+    border-top: 1px solid #fff;
+  }
+  .menu li:hover{
+    background:rgba(0,0,0,0.3)
+  }
+  .menu li a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+    /* ~ para la busqueda  */
+  #btn-nemu:checked ~ .menu {
+    margin: 0;
+  }
+  .main{
+    grid-area:main;
+    padding: 25px;
+  }
+  .container-servicios ul{
+    list-style: none;
+    margin-left: 25px;
+  }
 
-}
-.vision{
-  display: flex;
-  flex-direction: column;
-  grid-area:vision;
-}
-.parrafo-vision{
-  margin: 15px;
-  left: 25px;
-}
-.contenedor-vision{
-  width: 90%;
-  margin:15px 25px;
- }
-.imagen-vision{
-  width: 100%;
-  margin: 35px 5px;
-}
-.ubi{
-  grid-area: ubi;
-}
+.bxs-wrench{
+    color: var(--color-primary-1);
+    font-size: 25px;
+    margin-right: 25px;
+    font-style: italic;
+  }
+  .left{
+    margin-left: 15px;
+  }
+  .sidebar{
+    grid-area:sidebar;
+    padding: 15px;
+  }
+  .paginasImportantes ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .paginasImportantes li a{
+    display: block;
+    padding:8px 3px 0 3px ;
+    color: black;
+    text-decoration: none;
+  } 
+  .paginasImportantes li:hover{
+    background: rgba(0, 0, 0, 0.3)
+  }
+  .contac{
+    grid-area:contac;
+  }
+  .parrafo-contac{
+    margin: 25px 30px;
 
-.grid-container{
-  display: grid;
-  gap: 5px ;
-  grid-template:
-  "navbar"     50px
-  "inicio-img" auto
-  "main"       auto  
-  "sidebar"    auto
-  "contac"     auto
-  "vision"     auto
-  "ubi"        auto /
-  auto;
-}
-/* here es el tamaño del container 
-y le da un espacio para la imagen */
-.contenedor-img{
-  width: 70%;
-  margin: 0 auto;
-}
-/* here utiliza todo el espacio 
-del conteiner */
-.imagen-inicio {
-  width:100%;
-    margin: 30px 25px;
-}
-
-
-@media(min-width:600px){
-
-  /* .header {
-      grid-area: header;
-      background: var(--color-primary-1);
-      color: white;
-      text-align: left;
-      font-size: 20px;
-    } */
-
-
+  }
+  .vision{
+    display: flex;
+    flex-direction: column;
+    grid-area:vision;
+  }
+  .parrafo-vision{
+    margin: 15px;
+    left: 25px;
+  }
+  .contenedor-vision{
+    width: 90%;
+    margin:15px 25px;
+  }
+  .imagen-vision{
+    width: 100%;
+    margin: 35px 5px;
+  }
+  .ubi{
+    grid-area: ubi;
+  }
 
   .grid-container{
-        
-    grid-template: 
-  
-    "navbar      navbar"     50px
-    "inicio-img  inicio-img" auto
-    "sidebar     main"       auto
-    "contac      contac"     auto 
-    "vision      vision"     auto 
-    "ubi         ubi"        auto /
-     200px       auto;
-  }
-#navbar {
-background-image:linear-gradient(#2E5CB1, #031D4F);
-opacity: 86%;
-}
- #navbar label {
-   display: none;
-}
-.menu ul {
-    display: flex;
-   flex-direction: row;
-}
-.menu li {
-  border-right: 1px solid #fff;
-  border-top:0;
-}
-/* .menu li:hover {
-background: rgba(0, 0, 0, 0.3)
-} */
-.menu{
-
-  margin: 0;
-}
-.vision {
-  display: flex;
-  flex-direction: row;
-
-}
-}
-
-/* @media(min-width:900px) {
-  .grid-container {
-
+    display: grid;
+    gap: 5px ;
     grid-template:
-      "header    header  header"  100px
-      "sidebar   main    "  auto 
-      ""/
-       250px     auto    150px;
-
-
-grid-template:
-    "header  header" 50px
-    "navbar  navbar" 50px
-    "sidebar main"   auto
-    "contac  contac" 200px 
-    "vision  vision" 200px 
-    "ubi     ubi"    auto
-    "footer  footer" 100px /
-    200px auto;
-
-
+    "navbar"     50px
+    "inicio-img" auto
+    "main"       auto  
+    "sidebar"    auto
+    "contac"     auto
+    "vision"     auto
+    "ubi"        auto /
+    auto;
   }
-    #navbar ul {
-     display: inline;
-     padding:15px;
-         }
-} */
+  /* here es el tamaño del container 
+  y le da un espacio para la imagen */
+  .contenedor-img{
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* here utiliza todo el espacio 
+  del conteiner */
+  .imagen-inicio {
+    width:100%;
+      margin: 30px 25px;
+  }
+
+
+  @media(min-width:600px){
+    .grid-container{
+          
+      grid-template: 
+    
+        "navbar      navbar"     50px
+        "inicio-img  inicio-img" auto
+        "sidebar     main"       auto
+        "contac      contac"     auto 
+        "vision      vision"     auto 
+        "ubi         ubi"        auto /
+        200px       auto;
+    }
+  #navbar {
+    background-image:linear-gradient(#2E5CB1, #031D4F);
+    opacity: 86%;
+    }
+  #navbar label {
+    display: none;
+    }
+  .menu ul {
+    display: flex;
+    flex-direction: row;  
+    }
+  .menu li {
+    border-right: 1px solid #fff;
+    border-top:0;
+    }
+
+  .menu{
+    margin: 0;
+    }
+  .vision {
+    display: flex;
+    flex-direction: row;
+    }
+  }
+
+
 
 
 
