@@ -176,7 +176,10 @@ margin-left: 25px;
 .contac{
   grid-area:contac;
 }
+.parrafo-contac{
+  margin: 25px 30px;
 
+}
 .vision{
   display: flex;
   flex-direction: column;
